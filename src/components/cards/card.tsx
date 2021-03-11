@@ -41,9 +41,9 @@ const useStyles = makeStyles((theme: Theme) =>
 	})
 );
 
-export default function card() {
+export default function Cards() {
 	const classes = useStyles();
-	const [expanded, setExpanded] = useState(false);
+	const [expanded, setExpanded] = React.useState(false);
 
 	const handleExpandClick = () => {
 		setExpanded(!expanded);
