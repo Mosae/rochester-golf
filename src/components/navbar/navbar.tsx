@@ -1,9 +1,9 @@
 import React from 'react';
-
+import './navbar.css';
 function navbar() {
 	return (
-		<div>
-			<h3>Rochester golf navbar</h3>
+		<div className="navbar__wrapper">
+			<p className="navbar__logo">Rochester Golf</p>
 		</div>
 	);
 }
