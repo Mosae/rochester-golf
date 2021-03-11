@@ -1,11 +1,11 @@
 import React from 'react';
-
+import Main from './main';
 import './App.css';
 
 function App() {
 	return (
 		<div className="App">
-			<h1>Rochester Golf Apps</h1>
+			<Main />
 		</div>
 	);
 }
