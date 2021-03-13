@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme: Theme) =>
 			maxWidth: 345,
 		},
 		media: {
-			height: 0,
+			height: 2,
 			paddingTop: '56.25%', // 16:9
 		},
 		expand: {
@@ -62,13 +62,13 @@ export default function Cards() {
 						<MoreVertIcon />
 					</IconButton>
 				}
-				title="Shrimp and Chorizo Paella"
-				subheader="September 14, 2016"
+				title="Soldier's Field Golf Club"
+				subheader="Founded: September 14, 2016"
 			/>
 			<CardMedia
 				className={classes.media}
-				image="/static/images/cards/paella.jpg"
-				title="Paella dish"
+				image="./../../images/soldiersfield.jpeg"
+				title="Soldier's Field"
 			/>
 			<CardContent>
 				<Typography variant="body2" color="textSecondary" component="p">
@@ -96,7 +96,7 @@ export default function Cards() {
 			</CardActions>
 			<Collapse in={expanded} timeout="auto" unmountOnExit>
 				<CardContent>
-					<Typography paragraph>Method:</Typography>
+					<Typography paragraph>Details:</Typography>
 					<Typography paragraph>
 						Heat 1/2 cup of the broth in a pot until simmering, add saffron and
 						set aside for 10 minutes.
