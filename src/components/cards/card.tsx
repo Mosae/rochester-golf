@@ -58,11 +58,11 @@ export default function Cards() {
 						S
 					</Avatar>
 				}
-				action={
-					<IconButton aria-label="settings">
-						<MoreVertIcon />
-					</IconButton>
-				}
+				// action={
+				// 	<IconButton aria-label="settings">
+				// 		<MoreVertIcon />
+				// 	</IconButton>
+				// }
 				title="Soldier's Field Golf Club"
 				subheader="Downtown Rochester"
 			/>
