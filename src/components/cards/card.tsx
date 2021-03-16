@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		root: {
 			maxWidth: 345,
+			marginBottom: '6.25%',
 		},
 		media: {
 			height: 2,

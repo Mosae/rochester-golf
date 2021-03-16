@@ -3,18 +3,9 @@ import './navbar.css';
 function navbar() {
 	return (
 		<div className="navbar__wrapper">
-			<ul className="nav__ul">
-				<li>
-					<a href="/">Rochester Golf</a>
-				</li>
-				<li className="nav__right">
-					<a href="/">Contact us</a>
-				</li>
-			</ul>
+			<p className="navbar__logo">Rochester Golf</p>
+			<p className="nav__right">Contact Us</p>
 		</div>
-		// <div className="navbar__wrapper">
-		// 	<p className="navbar__logo">Rochester Golf</p>
-		// </div>
 	);
 }
 
