@@ -1,11 +1,12 @@
 .navbar__wrapper {
+	display: flex;
 	background-color: azure;
 	padding: 1em;
 }
-/* .navbar__logo {
+.navbar__logo {
 	font-weight: 800;
 	text-align: left;
-} */
+}
 .nav__ul {
 	text-decoration: none;
 	display: flex;
