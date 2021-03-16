@@ -1,0 +1,12 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: aquamarine;
+	width: 92%;
+	margin: 0 auto;
+	padding: 3rem 0rem 4rem;
+}
+.made__by {
+	font-weight: 300;
+	font-size: 0.9rem;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/navbar/navbar';
 import Header from './components/header/header';
 import Cards from './components/cards/card';
+import Ft from './components/footer/Footer';
 
 function main() {
 	return (
@@ -9,6 +10,7 @@ function main() {
 			<Navbar />
 			<Header />
 			<Cards />
+			<Ft />
 		</div>
 	);
 }
