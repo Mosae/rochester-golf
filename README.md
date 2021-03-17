@@ -1,1 +1,1 @@
-# This is a personal project about the local golf courses. I plan on using cards to display details about the courses. This is version 1 on the project and I have more ideas on the next stages. Please feel free to chip in with your ideas. 
+# This is a personal project about the local golf courses. I plan on using cards to display details about the courses. This is version 1 of the project and I have more ideas on the next stages. Please feel free to chip in with your ideas. 
