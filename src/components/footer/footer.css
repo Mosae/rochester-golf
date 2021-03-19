@@ -10,7 +10,8 @@
 	font-weight: 300;
 	font-size: 0.9rem;
 }
-/* nav {
+nav {
 	display: flex;
 	justify-items: center;
-} */
+	justify-content: space-between;
+}
