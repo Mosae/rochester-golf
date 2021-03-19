@@ -1,3 +1,56 @@
 .footer {
-	background-color: aquamarine;
+	@include flex(space-between);
+	align-items: center;
+	width: 92%;
+	margin: 0 auto;
+	padding: 3rem 2rem 4rem;
+	background-color: rgb(238, 238, 238);
+	@media (max-width: $lg-mobile) {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	@media (max-width: $mobile) {
+		width: 85%;
+		padding: 2rem 0;
+	}
+
+	@media (max-width: $sm-mobile) {
+		width: 80%;
+	}
+
+	.made__by {
+		font-weight: 300;
+		font-size: 0.9rem;
+
+		@media (max-width: $mobile) {
+			font-size: 0.8rem;
+		}
+	}
+
+	nav {
+		@media (max-width: $lg-mobile) {
+			margin-top: 1rem;
+			text-align: center;
+		}
+		a {
+			padding: 0.3rem 0;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-weight: normal;
+			color: green;
+			font-size: 1.3rem;
+
+			&:first-child {
+				margin-right: 1rem;
+			}
+			&:last-child {
+				margin-left: 1rem;
+			}
+
+			@media (max-width: $tablet) {
+				font-size: 0.8rem;
+			}
+		}
+	}
 }
