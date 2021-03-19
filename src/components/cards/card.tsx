@@ -14,17 +14,18 @@ import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
+//import MoreVertIcon from '@material-ui/icons/MoreVert';
 import soldiers from './soldiersfield.jpg';
 
 const useStyles = makeStyles((theme: Theme) =>
 	createStyles({
 		root: {
 			maxWidth: 345,
+			marginLeft: '2%',
 			marginBottom: '6.25%',
 		},
 		media: {
-			height: 2,
+			height: 70,
 			paddingTop: '56.25%', // 16:9
 		},
 		expand: {
