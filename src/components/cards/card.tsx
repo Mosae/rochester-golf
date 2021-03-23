@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import soldiers from './soldiersfield.jpg';
+//have a sepate data file and dynamically render the cards + data
 
 const useStyles = makeStyles({
 	root: {
