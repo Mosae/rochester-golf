@@ -35,7 +35,7 @@ export default function MediaCard() {
 							image={soldiers}
 							title={info.name}
 						/>
-						<CardContent>
+						<CardContent keykey={info.id}>
 							<Typography gutterBottom variant="h5" component="h2">
 								Soldier's Field
 							</Typography>
