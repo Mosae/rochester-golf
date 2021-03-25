@@ -29,7 +29,6 @@ export default function MediaCard() {
 			<p>MO</p>
 
 			{courseData.map(function (info, i) {
-				console.log('test');
 				return (
 					<div>
 						<Card className={classes.root}>
@@ -41,20 +40,13 @@ export default function MediaCard() {
 								/>
 								<CardContent keykey={info.id}>
 									<Typography gutterBottom variant="h5" component="h2">
-										Soldier's Field
+										{info.name}
 									</Typography>
 									<Typography
 										variant="body2"
 										color="textSecondary"
 										component="p">
-										Soldiers Field GC is a classic course located in the middle
-										of downtown Rochester. Built in 1927 along the Zumbro River,
-										this beautiful course features tree lined fairways, well
-										bunkered greens, and challenging shots over the river.
-										Measuring less than 6,000 yards, the golf course has proven
-										time and time again that strategy and ball placement, and
-										not just length, are requirements to scoring well on this
-										challenging golf course.
+										{info.info}
 									</Typography>
 								</CardContent>
 							</CardActionArea>
