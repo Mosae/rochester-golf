@@ -24,42 +24,52 @@ const useStyles = makeStyles({
 
 export default function MediaCard() {
 	const classes = useStyles();
-
 	return (
-		<>
-			{courseData.forEach((info) => {
-				<Card className={classes.root}>
-					<CardActionArea>
-						<CardMedia
-							className={classes.media}
-							image={soldiers}
-							title={info.name}
-						/>
-						<CardContent keykey={info.id}>
-							<Typography gutterBottom variant="h5" component="h2">
-								Soldier's Field
-							</Typography>
-							<Typography variant="body2" color="textSecondary" component="p">
-								Soldiers Field GC is a classic course located in the middle of
-								downtown Rochester. Built in 1927 along the Zumbro River, this
-								beautiful course features tree lined fairways, well bunkered
-								greens, and challenging shots over the river. Measuring less
-								than 6,000 yards, the golf course has proven time and time again
-								that strategy and ball placement, and not just length, are
-								requirements to scoring well on this challenging golf course.
-							</Typography>
-						</CardContent>
-					</CardActionArea>
-					<CardActions>
-						<Button size="small" color="primary">
-							Share
-						</Button>
-						<Button size="small" color="primary">
-							Learn More
-						</Button>
-					</CardActions>
-				</Card>;
+		<div>
+			<p>MO</p>
+
+			{courseData.map(function (info, i) {
+				console.log('test');
+				return (
+					<div>
+						<Card className={classes.root}>
+							<CardActionArea>
+								<CardMedia
+									className={classes.media}
+									image={soldiers}
+									title={info.name}
+								/>
+								<CardContent keykey={info.id}>
+									<Typography gutterBottom variant="h5" component="h2">
+										Soldier's Field
+									</Typography>
+									<Typography
+										variant="body2"
+										color="textSecondary"
+										component="p">
+										Soldiers Field GC is a classic course located in the middle
+										of downtown Rochester. Built in 1927 along the Zumbro River,
+										this beautiful course features tree lined fairways, well
+										bunkered greens, and challenging shots over the river.
+										Measuring less than 6,000 yards, the golf course has proven
+										time and time again that strategy and ball placement, and
+										not just length, are requirements to scoring well on this
+										challenging golf course.
+									</Typography>
+								</CardContent>
+							</CardActionArea>
+							<CardActions>
+								<Button size="small" color="primary">
+									Share
+								</Button>
+								<Button size="small" color="primary">
+									Learn More
+								</Button>
+							</CardActions>
+						</Card>
+					</div>
+				);
 			})}
-		</>
+		</div>
 	);
 }
