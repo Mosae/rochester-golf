@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import soldiers from './soldiersfield.jpg';
+import { Grid } from '@material-ui/core/';
 
 import { courseData } from '../../data';
 
@@ -15,6 +16,7 @@ import { courseData } from '../../data';
 
 const useStyles = makeStyles({
 	root: {
+		flexGrow: 1,
 		maxWidth: 345,
 	},
 	media: {
@@ -25,43 +27,51 @@ const useStyles = makeStyles({
 export default function MediaCard() {
 	const classes = useStyles();
 	return (
-		<div>
-			<p>MO</p>
-
-			{courseData.map(function (info, i) {
-				return (
-					<div>
-						<Card className={classes.root}>
-							<CardActionArea>
-								<CardMedia
-									className={classes.media}
-									image={soldiers}
-									title={info.name}
-								/>
-								<CardContent keykey={info.id}>
-									<Typography gutterBottom variant="h5" component="h2">
-										{info.name}
-									</Typography>
-									<Typography
-										variant="body2"
-										color="textSecondary"
-										component="p">
-										{info.info}
-									</Typography>
-								</CardContent>
-							</CardActionArea>
-							<CardActions>
-								<Button size="small" color="primary">
-									Share
-								</Button>
-								<Button size="small" color="primary">
-									Learn More
-								</Button>
-							</CardActions>
-						</Card>
-					</div>
-				);
-			})}
-		</div>
+		<Grid
+			container
+			// spacing={4}
+			direction="row"
+			justify="flex-start"
+			alignItems="flex-start">
+			<div className={classes.root}>
+				{courseData.map(function (info, i) {
+					return (
+						<div>
+							<p>{info.id}</p>
+							<Grid item xs={2} md={3} lg={12} key={info.id}>
+								<Card>
+									<CardActionArea>
+										<CardMedia
+											className={classes.media}
+											image={soldiers}
+											title={info.name}
+										/>
+										<CardContent>
+											<Typography gutterBottom variant="h5" component="h2">
+												{info.name}
+											</Typography>
+											<Typography
+												variant="body2"
+												color="textSecondary"
+												component="p">
+												{info.info}
+											</Typography>
+										</CardContent>
+									</CardActionArea>
+									<CardActions>
+										<Button size="small" color="primary">
+											Share
+										</Button>
+										<Button size="small" color="primary">
+											Learn More
+										</Button>
+									</CardActions>
+								</Card>
+							</Grid>
+						</div>
+					);
+				})}
+			</div>
+		</Grid>
 	);
 }
