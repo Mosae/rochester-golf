@@ -43,7 +43,7 @@ export default function MediaCard() {
 									<CardActionArea>
 										<CardMedia
 											className={classes.media}
-											image={soldiers}
+											image={info.image}
 											title={info.name}
 										/>
 										<CardContent>
