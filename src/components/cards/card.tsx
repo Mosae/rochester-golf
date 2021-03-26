@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import soldiers from './soldiersfield.jpg';
+import './card.css';
 import { Grid } from '@material-ui/core/';
 
 import { courseData } from '../../data';
@@ -19,6 +19,12 @@ const useStyles = makeStyles({
 		flexGrow: 1,
 		maxWidth: 345,
 	},
+	card__container: {
+		// //display: 'flex',
+		// margin: 200,
+		// // justifyContent: 'space-between',
+	},
+
 	media: {
 		height: 140,
 	},
@@ -29,21 +35,21 @@ export default function MediaCard() {
 	return (
 		<Grid
 			container
-			// spacing={4}
+			spacing={0}
 			direction="row"
-			justify="flex-start"
+			justify="space-between"
 			alignItems="flex-start">
-			<div className={classes.root}>
+			<div className={classes.card__container}>
 				{courseData.map(function (info, i) {
 					return (
-						<div>
-							<p>{info.id}</p>
-							<Grid item xs={2} md={3} lg={12} key={info.id}>
+						<div className={classes.root}>
+							{/* <p>{info.id}</p> */}
+							<Grid item md={12} key={info.id}>
 								<Card>
 									<CardActionArea>
 										<CardMedia
 											className={classes.media}
-											image={soldiers}
+											image={info.image}
 											title={info.name}
 										/>
 										<CardContent>
