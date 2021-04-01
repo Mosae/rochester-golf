@@ -42,7 +42,7 @@ export default function MediaCard() {
 				// justify="space-between"
 				// alignItems="flex-start"
 			>
-				{courseData.map(function (info, i) {
+				{courseData.map(function (info) {
 					return (
 						<div className={classes.root} key={info.id}>
 							{/* <p>{info.id}</p> */}
@@ -70,7 +70,7 @@ export default function MediaCard() {
 										<Button size="small" color="primary">
 											Share
 										</Button>
-										<Button size="small" color="primary">
+										<Button size="small" color="primary" href={info.website}>
 											Learn More
 										</Button>
 									</CardActions>
