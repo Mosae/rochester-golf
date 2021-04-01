@@ -18,11 +18,12 @@ const useStyles = makeStyles({
 	root: {
 		flexGrow: 1,
 		maxWidth: 345,
+		margin: 19,
 	},
 	card__container: {
-		// //display: 'flex',
-		// margin: 200,
-		// // justifyContent: 'space-between',
+		display: 'flex',
+		//margin: 200,
+		//justifyContent: 'space-between',
 	},
 
 	media: {
@@ -33,18 +34,19 @@ const useStyles = makeStyles({
 export default function MediaCard() {
 	const classes = useStyles();
 	return (
-		<Grid
-			container
-			spacing={0}
-			direction="row"
-			justify="space-between"
-			alignItems="flex-start">
-			<div className={classes.card__container}>
+		<div className={classes.card__container}>
+			<Grid
+				container
+				// spacing={0}
+				// direction="row"
+				// justify="space-between"
+				// alignItems="flex-start"
+			>
 				{courseData.map(function (info, i) {
 					return (
-						<div className={classes.root}>
+						<div className={classes.root} key={info.id}>
 							{/* <p>{info.id}</p> */}
-							<Grid item md={12} key={info.id}>
+							<Grid item md={12}>
 								<Card>
 									<CardActionArea>
 										<CardMedia
@@ -77,7 +79,7 @@ export default function MediaCard() {
 						</div>
 					);
 				})}
-			</div>
-		</Grid>
+			</Grid>
+		</div>
 	);
 }
